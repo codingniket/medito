@@ -11,6 +11,7 @@ import { router } from "expo-router";
 import Slider from "@react-native-community/slider";
 import { useAudioPlayer, useAudioPlayerStatus } from "expo-audio";
 import audio from "../../../assets/meditations/audio1.mp3";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 export default function details() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -31,6 +32,7 @@ export default function details() {
   }
   return (
     <SafeAreaView className="bg-orange-400 flex-1 p-2 justify-between">
+      <AnimatedBackground />
       {/* Page content */}
       <View className="flex-1">
         {/* Top part of the screen */}
